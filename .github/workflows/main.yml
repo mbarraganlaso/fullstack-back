@@ -13,7 +13,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install pylint pytest flask
+        pip install pylint pytest flask typing_extensions
     - name: Pylint
       run: pylint $(find . -name "*.py" | xargs)
     - name: Pytest
