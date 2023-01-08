@@ -18,5 +18,4 @@ def comprueba_disponibilidad(tamano):
     """
     if tamano == "S":
         return False
-    else:
-        return True
+    return True
