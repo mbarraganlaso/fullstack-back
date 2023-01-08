@@ -11,3 +11,12 @@ def guardar_pedido(nombre, apellidos):
     with open("data/pedidos.txt", "a", encoding="utf-8") as file:
         file.write("-" + nombre + " " + apellidos + "\n")
         file.close()
+
+def comprueba_disponibilidad(tamano):
+    """
+    Comprueba si hay pizzas disponibles del tamaño solicitado
+    """
+    if tamano == "S":
+        return False
+    else:
+        return True
